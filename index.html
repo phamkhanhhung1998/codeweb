@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,39 +10,53 @@
             font-family: Arial, sans-serif;
             text-align: center;
         }
-
+        
         #greeting {
             font-size: 24px;
             margin: 20px;
         }
-
+        
         .number {
             font-size: 16px;
-            color: #ff0000; /* Màu đỏ */
+            color: #ff0000;
+            /* Màu đỏ */
             animation: colorChange 2s infinite;
         }
-
+        
         .big-number {
             font-size: 32px;
-            color: #0000ff; /* Màu xanh */
+            color: #0000ff;
+            /* Màu xanh */
             animation: colorChange 2s infinite;
         }
-
+        
         .centered-number {
-            font-size: 64px;
-            color: #00ff00; /* Màu xanh lá cây */
+            font-size: 200px;
+            color: #00ff00;
+            /* Màu xanh lá cây */
             animation: colorChange 2s infinite;
         }
-
+        
         @keyframes colorChange {
-            0% { color: #ff0000; }
-            25% { color: #00ff00; }
-            50% { color: #0000ff; }
-            75% { color: #ff00ff; }
-            100% { color: #ff0000; }
+            0% {
+                color: #ff0000;
+            }
+            25% {
+                color: #00ff00;
+            }
+            50% {
+                color: #0000ff;
+            }
+            75% {
+                color: #ff00ff;
+            }
+            100% {
+                color: #ff0000;
+            }
         }
     </style>
 </head>
+
 <body>
     <h1>Chúc mừng bạn có 10 điểm!</h1>
     <input type="text" id="nameInput" placeholder="Nhập tên của bạn">
@@ -57,10 +72,11 @@
             if (name) {
                 greeting = `Chúc ${name} được <span class="big-number">10</span> điểm!`;
             }
-            
+
             greetingElement.innerHTML = greeting;
         }
     </script>
     <div id="numbersContainer"></div>
 </body>
+
 </html>
